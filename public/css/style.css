@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    font-family: "Inria Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F7F8;
+    color: #6C48C5;
+    height: 50px;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    margin-top: 50px;
+    border: 0px solid black;
+    border-radius: 10px;
+    width: 200px;
+
+}
+
+.card1,.card2{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.card1-inner{
+    border: 2px solid black;
+    width: 270px;
+    height: 150px;
+}
