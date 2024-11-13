@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pet Details</title>
+    <link rel="stylesheet" href="/css/showdetails.css">
 </head>
 <body>
-    <h1>Working</h1>
-        <img src=<%= li.img %> alt="">
-        <h3><%= li.name %></h3>
-        <h3><%= li.breed %></h3>
-        <h3><%= li.height %></h3>
-        <h3><%= li.gender %></h3>
-
-        <form action="/home/adopt" method="get">
-        <button>Adopt</button>
-        </form>
+    <div class="container">
+        <h1>Pet Details</h1>
+        <div class="pet-details">
+            <img src="<%= li.img %>" alt="<%= li.name %>">
+            <div class="pet-info">
+                <h3>Name: <span><%= li.name %></span></h3>
+                <h3>Breed: <span><%= li.breed %></span></h3>
+                <h3>Height: <span><%= li.height %></span></h3>
+                <h3>Gender: <span><%= li.gender %></span></h3>
+            </div>
+            <form action="/home/adopt" method="get">
+                <button class="adopt-button">Adopt</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

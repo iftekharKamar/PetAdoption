@@ -59,16 +59,13 @@ app.get("/home/showdog/:id",async(req,res)=>{
     res.render("showdetails.ejs",{li});
 })
 
-// app.get("/home/showcat/:id",async(req,res)=>{
-//     let id = await req.params
-//     li=Listing,Listing.findById(id)
-//     console.log(li)
-//     // res.render("showdetails.ejs",{li})
-// })
-// app.get("/home/showrabbit/:id",(req,res)=>{
-//     let id = req.params
-//     res.render("showdetails.ejs",{id})
-// })
+app.get("/home/showcat/:id",async(req,res)=>{
+    let id = req.params.id;
+    let li = await Listing.findById(id);
+    res.render("showdetails.ejs",{li});
+})
+
+
 app.get("/home/new",(req,res)=>{
     res.render("new.ejs");
 })
@@ -84,6 +81,18 @@ app.get("/home/adopt",(req,res)=>{
     res.render("adopt.ejs")
 })
 
+
+app.get("/home/adoption_checklist",(req,res)=>{
+    res.render("checklist.ejs")
+})
+
+app.get("/home/detail_dog",(req,res)=>{
+    res.render("detail.ejs")
+})
+
+app.get("/home/pet_faq",(req,res)=>{
+    res.render("faq.ejs")
+})
 
 app.listen(8080,(req,res)=>{
     console.log("app is listining");

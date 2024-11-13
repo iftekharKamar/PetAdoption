@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/new.css">
-    <title>Document</title>
+    <title>Create New Listing</title>
 </head>
 <body>
-    <h3>Create New Listing</h3>
+    <div class="container">
+        <h3>Create New Listing</h3>
 
-    <form method="POST" action="/home">
-        <input type="text" placeholder="Enter Title" name="listing[title]">
-        <br><br>
-        <input type="text" placeholder="Enter Name" name="listing[name]">
-        <br><br>
-        <input type="text" placeholder="Enter Image Link/URL" name="listing[img]">
-        <br><br>
-        <input type="text" placeholder="Enetr breed" name="listing[breed]">
-        <br><br>
-        <input type="text" placeholder="Enetr Height Small/Medium/Large" name="listing[height]">
-        <br><br>
-        <input type="text" placeholder="Enetr Gender" name="listing[gender]">
-        <br><br>
-        <Button>Submit</Button>
-    </form>
+        <form method="POST" action="/home">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Title" name="listing[title]" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Name" name="listing[name]" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Image Link/URL" name="listing[img]" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Breed" name="listing[breed]" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Height (Small/Medium/Large)" name="listing[height]" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Gender" name="listing[gender]" required>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

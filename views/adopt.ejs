@@ -4,69 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Adoption Form</title>
+    <link rel="stylesheet" href="/css/adopt.css">
 </head>
 <body>
-    <h1>Dog Adoption Form</h1>
-    <form action="#" method="post">
-        <label for="name">Your name *</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <div class="form-container">
+        <h1>Dog Adoption Form</h1>
+        <form action="#" method="post" class="adoption-form">
+            <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-        <label for="email">Email address *</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <label for="phone">Phone number *</label><br>
-        <input type="tel" id="phone" name="phone" required><br><br>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
 
-        <label for="city">Your current city *</label><br>
-        <input type="text" id="city" name="city" required><br><br>
+            <div class="form-group">
+                <label for="city">Your Current City *</label>
+                <input type="text" id="city" name="city" required>
+            </div>
 
-        <label for="dob">Date of Birth *</label><br>
-        <input type="date" id="dob" name="dob" required><br><br>
+            <div class="form-group">
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
 
-        <label for="address">Address *</label><br>
-        <input type="text" id="address" name="address" required><br><br>
+            <div class="form-group">
+                <label for="address">Address *</label>
+                <input type="text" id="address" name="address" required>
+            </div>
 
-        <label for="nativePlace">Your native place? *</label><br>
-        <input type="text" id="nativePlace" name="nativePlace" required><br><br>
+            <div class="form-group">
+                <label for="nativePlace">Your Native Place *</label>
+                <input type="text" id="nativePlace" name="nativePlace" required>
+            </div>
 
-        <label for="reason">Why are you looking to adopt? (Describe in 2-3 lines) *</label><br>
-        <textarea id="reason" name="reason" rows="3" required></textarea><br><br>
+            <div class="form-group">
+                <label for="reason">Why are you looking to adopt? *</label>
+                <textarea id="reason" name="reason" rows="3" required></textarea>
+            </div>
 
-        <label>Are you single or with family? *</label><br>
-        <input type="radio" id="single" name="familyStatus" value="single" required>
-        <label for="single">Yes, I am single</label><br>
-        <input type="radio" id="withFamily" name="familyStatus" value="withFamily" required>
-        <label for="withFamily">No, I live with my family</label><br><br>
+            <div class="form-group">
+                <label>Are you single or with family? *</label>
+                <div class="radio-group">
+                    <input type="radio" id="single" name="familyStatus" value="single" required>
+                    <label for="single">Yes, I am single</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="withFamily" name="familyStatus" value="withFamily" required>
+                    <label for="withFamily">No, I live with my family</label>
+                </div>
+            </div>
 
-        <label for="foodType">What will you feed your dog? *</label><br>
-        <input type="radio" id="veg" name="foodType" value="veg" required>
-        <label for="veg">Veg</label><br>
-        <input type="radio" id="nonVeg" name="foodType" value="nonVeg" required>
-        <label for="nonVeg">Non-Veg</label><br><br>
+            <div class="form-group">
+                <label>What will you feed your dog? *</label>
+                <div class="radio-group">
+                    <input type="radio" id="veg" name="foodType" value="veg" required>
+                    <label for="veg">Veg</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="nonVeg" name="foodType" value="nonVeg" required>
+                    <label for="nonVeg">Non-Veg</label>
+                </div>
+            </div>
 
-        <label for="foodDiet">Specify the food and diet *</label><br>
-        <textarea id="foodDiet" name="foodDiet" rows="3" required></textarea><br><br>
+            <div class="form-group">
+                <label for="foodDiet">Specify the food and diet *</label>
+                <textarea id="foodDiet" name="foodDiet" rows="3" required></textarea>
+            </div>
 
-        <label for="caregiver">Who will be the primary caregiver? *</label><br>
-        <input type="text" id="caregiver" name="caregiver" required><br><br>
+            <div class="form-group">
+                <label for="caregiver">Who will be the primary caregiver? *</label>
+                <input type="text" id="caregiver" name="caregiver" required>
+            </div>
 
-        <label for="relocatePlan">What will you do with your dog if you have to relocate from Bangalore? *</label><br>
-        <textarea id="relocatePlan" name="relocatePlan" rows="3" required></textarea><br><br>
+            <div class="form-group">
+                <label for="relocatePlan">What will you do if you relocate from Bangalore? *</label>
+                <textarea id="relocatePlan" name="relocatePlan" rows="3" required></textarea>
+            </div>
 
-        <label for="members">How many members at home? *</label><br>
-        <input type="number" id="members" name="members" required><br><br>
+            <div class="form-group">
+                <label for="members">How many members are at home? *</label>
+                <input type="number" id="members" name="members" required>
+            </div>
 
-        <label for="profession">What is your profession and work timings? *</label><br>
-        <textarea id="profession" name="profession" rows="3" required></textarea><br><br>
+            <div class="form-group">
+                <label for="profession">Your Profession and Work Timings *</label>
+                <textarea id="profession" name="profession" rows="3" required></textarea>
+            </div>
 
-        <label for="aloneHours">How many hours will the dog be expected to stay alone on any day? *</label><br>
-        <input type="number" id="aloneHours" name="aloneHours" required><br><br>
+            <div class="form-group">
+                <label for="aloneHours">How many hours will the dog stay alone in a day? *</label>
+                <input type="number" id="aloneHours" name="aloneHours" required>
+            </div>
 
-        <label for="walks">How many times will you walk the dog in a day? *</label><br>
-        <input type="number" id="walks" name="walks" required><br><br>
+            <div class="form-group">
+                <label for="walks">How many times will you walk the dog in a day? *</label>
+                <input type="number" id="walks" name="walks" required>
+            </div>
 
-        <button>Submit</button>
-    </form>
-    
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
 </body>
 </html>

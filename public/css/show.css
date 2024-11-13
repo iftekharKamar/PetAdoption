@@ -1,27 +1,96 @@
-*{
-    margin: 0%;
-    font-family: "Inria Sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+
+/* Reset some basic styles */
+body, h1, h2, h3, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Sans', sans-serif;
 }
 
-
-.outer{
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: 300px 300px 300px 300px;
-    row-gap: 50px;
+/* Basic body styles */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-.inner{
-    height: 300px;
+/* Heading style */
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Outer container styling */
+.outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Inner container for each listing */
+.inner {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 300px;
-    border: 2px solid black;
-    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img{
-    height: 200px;
-    width: 270px;
+/* Hover effect for each listing */
+.inner:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.inner img {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Pet name styling */
+.inner h3 {
+    font-size: 1.4rem;
+    color: #004d40;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Button styling */
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+}
+
+/* Adding media queries for responsiveness */
+@media (max-width: 768px) {
+    .outer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner {
+        width: 80%;
+    }
 }
