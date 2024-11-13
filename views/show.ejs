@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/show.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Working</h3>
+
+    <div class="outer">
+        <%for(let li of allListings){%>
+            <% if (li.title==name) { %>
+                <div class="inner">
+                <img src=<%= li.img %> alt="">
+                    <h3><%= li.name %></h3>
+                    <form action="/home/show<%= name %>/<%= li._id %>">
+                    <button>Show details</button></form>
+                </div>
+            <% } %>
+       <%  } %>
+    </div>
+</body>
+</html>
