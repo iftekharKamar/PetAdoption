@@ -94,6 +94,17 @@ app.get("/home/pet_faq",(req,res)=>{
     res.render("faq.ejs")
 })
 
+app.get("/home/about_us",(req,res)=>{
+    res.render("about.ejs")
+})
+
+app.get("/home/contact_us",(req,res)=>{
+    res.render("contact.ejs")
+})
+app.get("/home/adopted_success",(req,res)=>{
+    res.render("success.ejs")
+})
+
 app.listen(8080,(req,res)=>{
     console.log("app is listining");
 })

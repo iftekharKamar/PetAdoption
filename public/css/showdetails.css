@@ -9,6 +9,9 @@ body, h1, h3, p, img, button {
 /* Body and container styles */
 body {
     background-color: #f3f4f6;
+}
+.outer{
+    background-color: #f3f4f6;
     color: #333;
     display: flex;
     justify-content: center;
@@ -105,4 +108,39 @@ h1 {
     .pet-info h3 {
         font-size: 1rem;
     }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #00796b;
+    color: #ffffff;
+    height:50px;
+}
+
+.navbar .logo h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffe0b2;
 }

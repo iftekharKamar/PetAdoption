@@ -82,3 +82,39 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"], 
 .submit-button:hover {
     background-color: #2980b9;
 }
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #00796b;
+    color: #ffffff;
+    height:50px;
+}
+
+.navbar .logo h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffe0b2;
+}

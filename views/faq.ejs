@@ -37,9 +37,59 @@
             border: 1px solid #dddddd;
             margin-bottom: 20px;
         }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #00796b;
+    color: #ffffff;
+    height:50px;
+}
+
+.navbar .logo h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffe0b2;
+}
+
     </style>
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Pet Adoption</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/home/about_us">About Us</a></li>
+                    <li><a href="/home/contact_us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <h1>Pet-Adoption FAQs</h1>
     <div class="faq-section">
         <p>Thank you for using Petfinder! We’re here to help you every step of the way from “just looking” at over 250,000 adoptable pets, to bringing your pet home, to living a long and happy life with your new family member.</p>

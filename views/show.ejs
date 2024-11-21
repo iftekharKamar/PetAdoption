@@ -7,8 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Working</h3>
-
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Pet Adoption</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/home/about_us">About Us</a></li>
+                    <li><a href="/home/contact_us">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="outer">
         <%for(let li of allListings){%>
             <% if (li.title==name) { %>
